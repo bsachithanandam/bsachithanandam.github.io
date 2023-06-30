@@ -31,10 +31,6 @@
  }
 
  section{
-   background-image: url('https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/10/computer_engineer-compare-page.jpg'); 
-   background-size: cover; 
-   height:480px; 
-   padding-top:80px;
     min-height: 100vh;
     padding: 10rem 9% 2rem;
  }
