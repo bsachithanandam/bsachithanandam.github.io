@@ -82,7 +82,6 @@
 
  .home-img img{
     width:35vw ;
-    animation: floatImage 4s ease-in-out infinite;
  }
 
  @keyframes floatImage{
