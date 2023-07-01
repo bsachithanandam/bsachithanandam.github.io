@@ -33,7 +33,7 @@
 
  section{
     min-height: 100vh;
-    padding: 2rem 95% 0rem;
+    padding: 2rem 4% 0rem;
  }
  .header{
     position: fixed;
@@ -89,7 +89,7 @@
  }
  .home-content h3:nth-of-type(2){
    color: var(--name-text-color);
-    margin-bottom: 1rem;
+   margin-bottom: 1rem;
  }
 
  span{
