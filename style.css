@@ -420,12 +420,10 @@
    }
    .about{
       flex-direction: column-reverse;
+      padding: 0rem;
+      margin : 0rem;
    }
 
-   .about img{
-      width: 70vw;
-      margin-top: 4rem;
-   }
    .services h2{
       margin-bottom: 3rem;
    }
