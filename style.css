@@ -16,6 +16,7 @@
     --bg-color:#0A2647;
     --second-bg-color:#144272;
     --text-color:#80a3e3;
+    --name-text-color:#e3e180;
     --main-color:#e3ea99;
  }
 
@@ -81,11 +82,13 @@
  }
 
  .home-content h3 {
+   color: var(--name-text-color);
     font-size: 3.2rem;
     font-weight: 700;
 
  }
  .home-content h3:nth-of-type(2){
+   color: var(--name-text-color);
     margin-bottom: 1rem;
  }
 
@@ -93,6 +96,7 @@
     color: var(--main-color);
  }
  .home-content h1{
+   color: var(--name-text-color);
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.0;
