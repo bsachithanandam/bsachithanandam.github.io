@@ -31,9 +31,9 @@
     color: var(--text-color);
  }
 
- section{
+section{
     min-height: 100vh;
-    padding: 2rem 4% 0rem;
+    padding: 2rem 4% 2rem;
  }
  .header{
     position: fixed;
@@ -75,12 +75,10 @@
     display: none;
  }
 
- .home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ .home-content{
+   padding : 2rem;
+   margin: 5rem;
  }
-
  .home-content h3 {
    color: var(--name-text-color);
     font-size: 3.2rem;
@@ -94,6 +92,9 @@
    align-items: left;
  }
 
+.multiple-text{
+   color: var(--bg-color);
+}
  span{
     color: var(--main-color);
  }
@@ -109,12 +110,12 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
@@ -123,11 +124,11 @@
    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     border: .5rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 10rem;
+    font-size: 12rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
@@ -156,11 +157,9 @@
  }
 
  .about{
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    padding: 3rem;
+    min-height: 70vh;
     background: var(--second-bg-color);
  }
 
@@ -170,11 +169,10 @@
  }
 
  .about-content {
-   margin: 1rem;
-   padding: 1rem;
+   padding: 2rem;
+   min-height: 70vh;
  }
  .about-content h2{
-    text-align: left;
     line-height: 1.2;
  }
 
@@ -182,9 +180,49 @@
     font-size: 2.6rem;
  }
 
+ .about-content h4{
+   font-size: 1.6rem;
+ }
+
  .about-content p{
     font-size: 1.6rem;
     margin: 1rem 0 1rem;
+ }
+
+ .skills-content h3{
+   font-size: 2.6rem;
+ }
+
+ .experience{
+   background: var(--second-bg-color);
+ }
+
+ .experiences-container{
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+ }
+
+ .experiences-container .experiences-box{
+   margin-bottom: 1rem;
+   padding: 3rem 2rem 4rem;
+   border-radius: 2rem;
+   flex: 1 1 30rem;
+   border: .2rem solid var(--main-color);
+   transition: .5s ease;
+   border-radius: 2rem;
+   height: 20rem;
+ }
+
+ .experiences-container .experiences-box h2{
+   font-size: 2.4rem;
+ }
+ .experiences-container .experiences-box h3{
+   font-size: 1.8rem;
+ }
+ .experiences-container .experiences-box p{
+   font-size: 1.5rem;
  }
  .services h2{
    margin-bottom: 5rem;
@@ -221,9 +259,7 @@
    font-size: 1.6rem;
    margin: 1rem 0 3rem;
  }
- .portfolio{
-   background: var(--second-bg-color);
- }
+ 
 .portfolio h2{
    margin-bottom: 4rem;
 }
@@ -419,7 +455,7 @@
    }
    .home{
       flex-direction: column;
-      height: 0rem;
+      display: flex; 
    }
    .home-content h3{
       font-size: 2.6rem;
