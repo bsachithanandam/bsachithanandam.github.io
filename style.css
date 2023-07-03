@@ -32,7 +32,7 @@
  }
 
 section{
-    min-height: 100vh;
+    min-height: fit-content;
     padding: 2rem 4% 2rem;
  }
  .header{
@@ -48,7 +48,7 @@ section{
     z-index:100 ;
 
  }
-
+ #more {display: none;}
  .header.sticky{
    border-bottom: .1rem solid rgba(0, 0,0, .2);
  }
@@ -189,6 +189,20 @@ section{
     margin: 1rem 0 1rem;
  }
 
+.skills-button{
+   display: inline-block;
+   height: fit-content;
+   width: fit-content;
+    padding: 1rem;
+    background: var(--main-color);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 700;
+    transition: .5s ease;
+    margin: 0.2rem;
+}
  .skills-content h3{
    font-size: 2.6rem;
  }
@@ -212,7 +226,7 @@ section{
    border: .2rem solid var(--main-color);
    transition: .5s ease;
    border-radius: 2rem;
-   height: 20rem;
+   height: fit-content;
  }
 
  .experiences-container .experiences-box h2{
@@ -259,37 +273,75 @@ section{
    font-size: 1.6rem;
    margin: 1rem 0 3rem;
  }
+ .project{
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   display: flex;
+   gap: 2rem;
+ }
+ .project .card {
+   /* Add shadows to create the "card" effect */
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   background-color: #144272;
+   width: fit-content;
+   height: fit-content;
  
+ }
+ .card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+.container {
+  padding: 2px 16px;
+  inline-size: 40rem;
+  overflow-wrap: break-word;
+} 
+.card img{
+   width: 40rem;
+   height: 30rem;
+   transition: .5s ease;
+   margin: 1rem;
+   display: flex;
+}
+.container h4{
+   font-size: 2.6rem;
+}
+.card .container{
+   margin: 0rem;
+   border-color: #FFD57E;
+   overflow: hidden;
+  
+}
+
+.cont-btn{
+    display: inline-block;
+    padding: 1rem;
+    background: var(--main-color);
+    border-radius: 2rem;
+    font-size: 1.0rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 500;
+    transition: .5s ease;
+    margin: 0.2rem;
+}
 .portfolio h2{
    margin-bottom: 4rem;
 }
-.portfolio-container{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   align-items: center;
-   gap: 2.5rem;
+
+.card .container h4{
+   font-size: 2rem;
 }
-.portfolio-container .portfolio-box{
-   position: relative;
-   border-radius: 2rem;
-   box-shadow: 0 0 1rem var(--bg-color);
-   overflow: hidden;
-   display: flex;
-}
-.portfolio-box img{
-   width: 100%;
-   transition: .5s ease;
-}
-.portfolio-box:hover img{
-   transform: scale(1.1);
-}
-.portfolio-box .portfolio-layer{
+
+
+.container .portfolio-layer{
    position: absolute;
    bottom: 0;
    left: 0;
    width: 100%;
    height: 100%;
-   background: linear-gradient(rgba(0,0,0, .1),var(--main-color));
+   background: linear-gradient(rgba(0,0,0, 1),var(--bg-color));
    display: flex;
    justify-content: center;
    align-items: center;
@@ -299,7 +351,9 @@ section{
    transform: translateY(100%);
    transition: .5s ease;
 }
-.portfolio-box:hover .portfolio-layer{
+
+
+.container:hover .portfolio-layer{
    transform: translateY(0);
 }
 
@@ -326,7 +380,9 @@ section{
    font-size: 2rem;
    color: var(--second-bg-color);
 }
-
+.contact{
+   background-color: #144272;
+}
 .contact h2{
    margin-bottom: 3rem;
 }
